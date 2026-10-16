@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../game/presentation/game_setup_screen.dart';
+
 /// Landing screen shown when the app starts.
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -58,7 +60,10 @@ class HomeScreen extends StatelessWidget {
               // Primary CTA
               FilledButton(
                 onPressed: () {
-                  // TODO: navigate to game setup
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                        builder: (_) => const GameSetupScreen()),
+                  );
                 },
                 child: const Text('Nueva partida'),
               ),

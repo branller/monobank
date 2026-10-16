@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 
+import 'core/theme.dart';
+import 'features/home/presentation/home_screen.dart';
+
 void main() {
-  runApp(const MainApp());
+  runApp(const MonoBankApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MonoBankApp extends StatelessWidget {
+  const MonoBankApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+    return MaterialApp(
+      title: 'MonoBank',
+      debugShowCheckedModeBanner: false,
+      theme: MonoBankTheme.darkTheme,
+      home: const HomeScreen(),
     );
   }
 }

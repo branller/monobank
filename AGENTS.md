@@ -1,4 +1,4 @@
-# Monopoly Bank — Agent Rules
+# MonoBank — Agent Rules
 
 ## Project
 - Build an offline-first Monopoly banking app using Flutter and Dart.
